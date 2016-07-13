@@ -1,3 +1,12 @@
+/* Mac, Win, Ubuntu, Linux, Default, Worse-case */
+body {
+    font-family: "Lucida Grande", "Segoe UI", "Ubuntu", "Cantarell", "Arial", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Lucida Grande", "Segoe UI", "Ubuntu", "Cantarell", "Arial", sans-serif !important;
+}
+
 #txtInput {
     height: 8rem;
 }
