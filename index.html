@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CryptoJs</title>
+  <link rel="stylesheet" href="./css/foundation.css">
+  <link rel="stylesheet" href="./css/app.css">
+</head>
+
+<body>
+  <div class="row">
+    <div class="small-12 columns">
+      <h4>CryptoJs - Simple local password encryption.</h4>
+    </div>
+  </div>
+
+
+
+  <div class="row">
+
+    <div class="small-12 columns">
+      <label>Pass Phrase:</label>
+      <input id="txtPassphrase" type="password" tabindex="1" placeholder="Pass phrase that only you know..." />
+    </div>
+    <div class="small-12 columns">
+      <label>Secret Text:</label>
+      <textarea id="txtInput" tabindex="2" placeholder="Text to encrypt or decrypt goes here..."></textarea>
+    </div>
+
+
+  </div>
+
+  <div class="row">
+    <div class="small-6 columns">
+      <button type="button" id="btnEncrypt" class="button expanded" tabindex="3">Encrypt</a>
+        </div>
+           <div class="small-6 columns">
+          <button type="button" id="btnDecrypt" class="button expanded" tabindex="4">Decrypt</a>
+        </div>   
+      </div>
+
+<div class="row">
+<div class="small-12 columns">
+    <div class="callout secondary footer-callout">
+      <div class="row">
+        <div class="small-12 medium-4 columns">
+          Comments? <a class="footer-email" href="mailto:kris.krause@gmail.com">kris.krause@gmail.com</a>
+        </div>
+
+        <div class="small-12 medium-4 columns">
+          GNU GENERAL PUBLIC LICENSE
+        </div>
+        
+        <div class="small-12 medium-4 columns">
+          Version: 1.0
+        </div>
+        
+
+
+        </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+<!-- Insert this line above script imports  -->
+<script>if (typeof module === 'object') {window.module = module; module = undefined;}</script>
+
+<!-- normal script imports etc  -->
+    <script src="./js/vendor/jquery.js"></script>
+    <script src="./js/vendor/what-input.js"></script>
+    <script src="./js/vendor/foundation.js"></script>
+    <script src="./js/vendor/aes.js"></script>
+    <script src="./js/app.js"></script>
+
+    <script>
+    // You can also require other files to run in this process
+    require('./renderer.js')
+  </script>
+
+  </body>
+</html>

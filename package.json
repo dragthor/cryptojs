@@ -1,0 +1,28 @@
+{
+  "name": "CryptoJs",
+  "version": "1.0.0",
+  "description": "Simple local encryption.",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dragthor/cryptojs.git"
+  },
+  "keywords": [
+    "Electron",
+    "quick",
+    "start",
+    "tutorial"
+  ],
+  "author": "GitHub",
+  "license": "GNU GENERAL PUBLIC LICENSE",
+  "bugs": {
+    "url": "https://github.com/dragthor/cryptojs/issues"
+  },
+  "homepage": "http://metroize.com/cryptojs/",
+  "devDependencies": {
+    "electron-prebuilt": "^1.2.0"
+  }
+}
