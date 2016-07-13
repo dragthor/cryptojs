@@ -78,7 +78,7 @@ const template = [
     submenu: [
       {
         label: 'Learn More',
-        click() { require('electron').shell.openExternal('https://github.com/dragthor/'); }
+        click() { require('electron').shell.openExternal('https://github.com/dragthor/cryptojs'); }
       },
     ]
   },
@@ -94,7 +94,7 @@ let mainWindow
 function createWindow () {
   // Create the browser window.
   mainWindow = new BrowserWindow({
-    width: 400, height: 500, center: true, fullscreenable : false
+    width: 400, height: 520, center: true, fullscreenable : false
   })
 
   // and load the index.html of the app.
