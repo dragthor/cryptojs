@@ -1,6 +1,9 @@
 # cryptojs
 Simple local password encryption.
 
+
+![Alt text](https://github.com/dragthor/cryptojs/blob/master/screenshots/screenshot.png?raw=true)
+
 ## Install
 npm install electron-prebuilt
 
