@@ -28,7 +28,7 @@ const template = [
             fs.readFile(file, 'utf-8', function (err, data) {
               if (err != null) console.log(err);
 
-              mainWindow.webContents.executeJavaScript("document.getElementById('txtInput').value = '" + data.trim() + "';CJs.SecureFields();");
+              mainWindow.webContents.executeJavaScript("document.getElementById('txtInput').value = '" + data.trim() + "';");
               mainWindow.webContents.executeJavaScript();
             });              
             
@@ -42,7 +42,7 @@ const template = [
           dialog.showSaveDialog(function (fileName) {
               if (typeof fileName === "undefined") return;
               
-              mainWindow.webContents.executeJavaScript("document.getElementById('txtInput').value;CJs.SecureFields();", function(result) {
+              mainWindow.webContents.executeJavaScript("document.getElementById('txtInput').value;", function(result) {
                   if (typeof result === "undefined") return;
                   if (result.length === 0) return;
                   if (result.trim().length === 0) return;
