@@ -2,7 +2,7 @@
 Simple local password encryption.
 
 
-![Alt text](https://github.com/dragthor/cryptojs/blob/master/screenshots/screenshot.png?raw=true)
+![Screenshot](https://github.com/dragthor/cryptojs/blob/master/screenshots/screenshot.png?raw=true)
 
 ## Install
 npm install electron-prebuilt
@@ -11,6 +11,11 @@ npm install electron-prebuilt
 npm start
 
 ## Dependencies
+
+[Electron](http://electron.atom.io/)
+
+[NodeJs](https://nodejs.org)
+
 jQuery v2.2.2
 
 Zurb Foundation v6.2.2
