@@ -5,6 +5,9 @@ You decide where to store your files.  For example, I use my [Microsoft One Driv
 
 ![Screenshot](https://github.com/dragthor/cryptojs/blob/master/screenshots/screenshot.png?raw=true)
 
+## Get
+Clone or download the source code to a local directory.
+
 ## Install
 npm install electron
 
