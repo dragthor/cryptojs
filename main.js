@@ -1,14 +1,15 @@
-const electron = require('electron')
-const {dialog} = require('electron')
+const electron = require('electron');
+const {dialog} = require('electron');
 
 const {Menu, MenuItem} = electron;
 
 var fs = require('fs');
 
 // Module to control application life.
-const app = electron.app
+const app = electron.app;
+
 // Module to create native browser window.
-const BrowserWindow = electron.BrowserWindow
+const BrowserWindow = electron.BrowserWindow;
 
 // Menu
 const template = [
@@ -19,7 +20,7 @@ const template = [
       {
         label: 'Open',
         accelerator: 'CmdOrCtrl+O',
-        click() { 
+        click() {
           dialog.showOpenDialog(function (fileNames) {
             if (typeof fileNames === "undefined") return;
 
@@ -30,8 +31,8 @@ const template = [
 
               mainWindow.webContents.executeJavaScript("document.getElementById('txtInput').value = '" + data.trim() + "';");
               mainWindow.webContents.executeJavaScript();
-            });              
-            
+            });
+
           });
         }
       },
@@ -40,17 +41,17 @@ const template = [
         accelerator: 'CmdOrCtrl+S',
         click() {
           dialog.showSaveDialog(function (fileName) {
-              if (typeof fileName === "undefined") return;
-              
-              mainWindow.webContents.executeJavaScript("document.getElementById('txtInput').value;", function(result) {
-                  if (typeof result === "undefined") return;
-                  if (result.length === 0) return;
-                  if (result.trim().length === 0) return;
+            if (typeof fileName === "undefined") return;
 
-                  fs.writeFile(fileName, result.trim(), function (err) {   
-                      if (err != null) console.log(err);
-                  });   
+            mainWindow.webContents.executeJavaScript("document.getElementById('txtInput').value;", function (result) {
+              if (typeof result === "undefined") return;
+              if (result.length === 0) return;
+              if (result.trim().length === 0) return;
+
+              fs.writeFile(fileName, result.trim(), function (err) {
+                if (err != null) console.log(err);
               });
+            });
           });
         }
       },
@@ -72,7 +73,7 @@ const template = [
       }
     ]
   },
-  
+
   {
     role: 'help',
     submenu: [
@@ -91,10 +92,10 @@ const menu = Menu.buildFromTemplate(template);
 // be closed automatically when the JavaScript object is garbage collected.
 let mainWindow
 
-function createWindow () {
+function createWindow() {
   // Create the browser window.
   mainWindow = new BrowserWindow({
-    width: 400, height: 520, center: true, fullscreenable : false
+    width: 400, height: 520, center: true, fullscreenable: false
   })
 
   // and load the index.html of the app.
@@ -103,7 +104,7 @@ function createWindow () {
   // Open the DevTools.
   //mainWindow.webContents.openDevTools()
 
-  
+
   Menu.setApplicationMenu(menu);
 
   // Emitted when the window is closed.

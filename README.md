@@ -6,7 +6,7 @@ You decide where to store your files.  For example, I use my [Microsoft One Driv
 ![Screenshot](https://github.com/dragthor/cryptojs/blob/master/screenshots/screenshot.png?raw=true)
 
 ## Install
-npm install electron-prebuilt
+npm install electron
 
 ## Run
 npm start

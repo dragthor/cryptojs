@@ -27,3 +27,19 @@ $("#btnDecrypt").click(function (e) {
         secret.val(result);
     }
 });
+
+$(document).keypress(function (e) {
+    if (e.ctrlKey) {
+        // Decrypt
+        if (e.which === 4) {
+            $("#btnDecrypt").trigger("click");
+        }
+
+        // Encrypt
+        if (e.which === 5) {
+            $("#btnEncrypt").trigger("click");
+        }
+    }
+});
+
+$("#txtPassphrase").focus();
