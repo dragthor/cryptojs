@@ -13,19 +13,19 @@ Cross platform - macOS, Linux, and Windows.
 Clone or download the source code to a local directory.
 
 ## Install
-npm install electron
+npm install
 
 ## Run
 npm start
 
 ## Dependencies
 
-[Electron](http://electron.atom.io/)
+[Electron](http://electron.atom.io/) v1.4.15
 
-[NodeJs](https://nodejs.org)
+[NodeJs](https://nodejs.org) v6.9.5
 
-[jQuery](http://jquery.com/) v2.2.2
+[jQuery](http://jquery.com/) v2.2.4
 
-[Zurb Foundation](http://foundation.zurb.com/) v6.2.2
+[Zurb Foundation](http://foundation.zurb.com/) v6.3.0
 
 [CryptoJS](https://code.google.com/archive/p/crypto-js/) v3.1.2
