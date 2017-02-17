@@ -1,21 +1,24 @@
 # CryptoJs
 Simple local password encryption.
 
-You decide where to store your files.  For example, I use my [Microsoft One Drive](http://onedrive.live.com/), [Google Drive](https://www.google.com/drive), [Dropbox](https://www.dropbox.com/), and [Mega](https://mega.nz/) accounts.
+You decide where to store your files.  For example, I use my [Microsoft One Drive](http://onedrive.live.com/), [Google Drive](https://www.google.com/drive), [Dropbox](https://www.dropbox.com/), and [Mega](https://mega.nz/) accounts.  Absolutely nothing is transmitted to a server by this app.
 
-I personally use CryptoJs daily to manage my passwords.  I "dog food" it to find bugs and improve usability.
+I personally use CryptoJs daily to manage my passwords.  I "dog food" it to find bugs and improve usability.  I use this app nearly every day.
 
 Cross platform - macOS, Linux, and Windows.
 
 ![Screenshot](https://github.com/dragthor/cryptojs/blob/master/screenshots/screenshot.png?raw=true)
 
-## Get
+## Prerequisites 
+Install [Node.js](https://nodejs.org/en/) for your platform.
+
+## Get the code
 Clone or download the source code to a local directory.
 
-## Install
+## Install via command line
 npm install
 
-## Run
+## Run via command line
 npm start
 
 ## Dependencies
