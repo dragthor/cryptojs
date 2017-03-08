@@ -16,14 +16,14 @@ Install [Node.js](https://nodejs.org/en/) for your platform.
 Clone or download the source code to a local directory.
 
 ## Install via command line
-npm install
+`npm install`
 
 ## Run via command line
-npm start
+`npm start`
 
 ## Dependencies
 
-[Electron](http://electron.atom.io/) v1.4.15
+[Electron](http://electron.atom.io/) v1.6.2
 
 [NodeJs](https://nodejs.org) v6.9.5
 
