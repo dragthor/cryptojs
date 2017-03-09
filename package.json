@@ -10,7 +10,8 @@
   ],
   "main": "main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "test" : "mocha --reporter progress \"tests/**/*.test.js\""
   },
   "repository": {
     "type": "git",
@@ -29,6 +30,8 @@
     "electron": "1.6.2"
   },
   "devDependencies": {
-    "electron": "1.6.2"
+    "electron": "1.6.2",
+    "chai": "3.5.0",
+    "mocha": "3.2.0"
   }
 }
