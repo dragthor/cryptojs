@@ -102,7 +102,7 @@ let mainWindow
 function createWindow() {
   // Create the browser window.
   mainWindow = new BrowserWindow({
-    width: 400, height: 520, center: true, fullscreenable: false
+    width: 410, height: 530, center: true, fullscreenable: false
   })
 
   // and load the index.html of the app.

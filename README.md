@@ -1,7 +1,7 @@
 # CryptoJs
 Simple local password encryption. An easy to use password manager.
 
-[![Build Status](https://travis-ci.org/dragthor/cryptojs.svg?branch=master)](https://travis-ci.org/dragthor/cryptojs)
+[![Build Status](https://travis-ci.org/dragthor/cryptojs.svg?branch=master)](https://travis-ci.org/dragthor/cryptojs) [![npm version](https://badge.fury.io/js/crypto-js-password-manager.svg)](https://badge.fury.io/js/crypto-js-password-manager)
 
 You decide where to store your files - local disk, USB drive, or remotely.  For example, I use my [Microsoft One Drive](http://onedrive.live.com/), [Google Drive](https://www.google.com/drive), [Dropbox](https://www.dropbox.com/), and [Mega](https://mega.nz/) accounts.
 
@@ -42,6 +42,6 @@ Clone or download the source code to a local directory.
 
 [jQuery](http://jquery.com/) v2.2.4
 
-[Zurb Foundation](http://foundation.zurb.com/) v6.3.0
+[Zurb Foundation](http://foundation.zurb.com/) v6.3.1
 
 [CryptoJS](https://code.google.com/archive/p/crypto-js/) v3.1.2
