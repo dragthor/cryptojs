@@ -1,7 +1,7 @@
 const electron = require('electron');
-const {dialog} = require('electron');
+const { dialog } = require('electron');
 
-const {Menu, MenuItem} = electron;
+const { Menu, MenuItem } = electron;
 
 var fs = require('fs');
 
@@ -79,7 +79,14 @@ const template = [
     submenu: [
       {
         label: 'Learn More',
+        accelerator: 'CmdOrCtrl+M',
         click() { require('electron').shell.openExternal('https://github.com/dragthor/cryptojs'); }
+      },
+
+      {
+        label: 'Random Password',
+        accelerator: 'CmdOrCtrl+P',
+        click() { require('electron').shell.openExternal('https://www.random.org/passwords/?num=5&len=12&format=html&rnd=new'); }
       },
     ]
   },
