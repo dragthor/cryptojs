@@ -1,13 +1,21 @@
 # CryptoJs
-Simple local password encryption.
+Simple local password encryption. An easy to use password manager.
 
 [![Build Status](https://travis-ci.org/dragthor/cryptojs.svg?branch=master)](https://travis-ci.org/dragthor/cryptojs)
 
-You decide where to store your files.  For example, I use my [Microsoft One Drive](http://onedrive.live.com/), [Google Drive](https://www.google.com/drive), [Dropbox](https://www.dropbox.com/), and [Mega](https://mega.nz/) accounts.  Absolutely nothing is transmitted to a server by this app.
+You decide where to store your files - local disk, USB drive, or remotely.  For example, I use my [Microsoft One Drive](http://onedrive.live.com/), [Google Drive](https://www.google.com/drive), [Dropbox](https://www.dropbox.com/), and [Mega](https://mega.nz/) accounts.
 
-I personally use CryptoJs daily to manage my passwords.  I "dog food" it to find bugs and improve usability.  I use this app nearly every day.
+Absolutely nothing is transmitted to a server by this app.
+
+I personally use CryptoJs daily to manage my passwords.  I "dog food" it to find bugs and improve usability.  I use this app nearly every day.  I hope you find it useful and "good enough".
 
 Cross platform - macOS, Linux, and Windows.
+
+## Tips
+* The longer the passphase the better.
+* Utilize the `Random Password` menu item to generate your passwords (or something similar).
+* Never use the same password twice.  Your online bank and Google passwords should be different.
+* Change your password frequently.
 
 ![Screenshot](https://github.com/dragthor/cryptojs/blob/master/screenshots/screenshot.png?raw=true)
 
