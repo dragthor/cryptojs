@@ -23,6 +23,9 @@ Clone or download the source code to a local directory.
 ## Run via command line
 `npm start`
 
+## Test via command line
+`npm test`
+
 ## Dependencies
 
 [Electron](http://electron.atom.io/) v1.6.2
