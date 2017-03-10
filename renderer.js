@@ -4,32 +4,32 @@
 const electron = require("electron");
 const ipc = electron.ipcRenderer;
 
-var last = "";
+// var last = "";
 
-document.getElementById("body").addEventListener("keydown", function (e) {
-    if (last.length === 0) {
-        last = e.key;
-    } else {
-        if (last === "Control" && e.key === "c") {
-            last = "";
+// document.getElementById("body").addEventListener("keydown", function (e) {
+//     if (last.length === 0) {
+//         last = e.key;
+//     } else {
+//         if (last === "Control" && e.key === "c") {
+//             last = "";
 
-            var selection = getSelectionText();
+//             var selection = getSelectionText();
 
-            if (selection != null && selection.length > 0) {
-                ipc.send("control+C", selection);
-            }
-        } else {
-            last = e.key;
-        }
-    }
-});
+//             if (selection != null && selection.length > 0) {
+//                 ipc.send("control+C", selection);
+//             }
+//         } else {
+//             last = e.key;
+//         }
+//     }
+// });
 
-function getSelectionText() {
-    var text = "";
-    if (document.getSelection) {
-        text = document.getSelection().toString();
-    } else if (document.selection && document.selection.type != "Control") {
-        text = document.selection.createRange().text;
-    }
-    return text;
-}
+// function getSelectionText() {
+//     var text = "";
+//     if (document.getSelection) {
+//         text = document.getSelection().toString();
+//     } else if (document.selection && document.selection.type != "Control") {
+//         text = document.selection.createRange().text;
+//     }
+//     return text;
+// }

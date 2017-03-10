@@ -147,10 +147,10 @@ app.on("activate", function () {
   }
 });
 
-// In this file you can include the rest of your app"s specific main process
+// In this file you can include the rest of your app's specific main process
 // code. You can also put them in separate files and require them here.
-ipc.on("control+C", (event, arg) => {
-  if (arg.length === 0) return;
+// ipc.on("control+C", (event, arg) => {
+//   if (arg.length === 0) return;
 
-  clipboard.writeText(arg);
-});
+//   clipboard.writeText(arg);
+// });
