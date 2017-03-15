@@ -3,7 +3,7 @@ const { dialog } = require("electron");
 
 const { Menu, MenuItem, clipboard } = electron;
 
-var fs = require("fs");
+const fs = require("fs");
 
 // Module to control application life.
 const app = electron.app;
@@ -26,13 +26,12 @@ const template = [
           dialog.showOpenDialog(function (fileNames) {
             if (typeof fileNames === "undefined") return;
 
-            var file = fileNames[0];
+            let file = fileNames[0];
 
             fs.readFile(file, "utf-8", function (err, data) {
               if (err != null) console.log(err);
 
               mainWindow.webContents.executeJavaScript("document.getElementById('txtInput').value = '" + data.trim() + "';");
-              mainWindow.webContents.executeJavaScript();
             });
 
           });
@@ -94,7 +93,6 @@ const template = [
   },
 ];
 
-
 const menu = Menu.buildFromTemplate(template);
 
 // Keep a global reference of the window object, if you don"t, the window will
@@ -105,14 +103,13 @@ function createWindow() {
   // Create the browser window.
   mainWindow = new BrowserWindow({
     width: 410, height: 530, center: true, fullscreenable: false
-  })
+  });
 
   // and load the index.html of the app.
   mainWindow.loadURL(`file://${__dirname}/index.html`);
 
   // Open the DevTools.
   // mainWindow.webContents.openDevTools();
-
 
   Menu.setApplicationMenu(menu);
 
@@ -122,7 +119,7 @@ function createWindow() {
     // in an array if your app supports multi windows, this is the time
     // when you should delete the corresponding element.
     mainWindow = null;
-  })
+  });
 }
 
 // This method will be called when Electron has finished
