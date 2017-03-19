@@ -9,7 +9,7 @@ Absolutely nothing is transmitted to a server by this app.
 
 I personally use CryptoJs daily to manage my passwords.  I "dog food" it to find bugs and improve usability.  I use this app nearly every day.  I hope you find it useful and "good enough".
 
-Cross platform - macOS, Linux, and Windows.
+Cross platform - macOS, Linux, and Windows.  It's also working my Raspberry Pi 3 Model B.
 
 ## Tips
 * The longer the passphase the better.
